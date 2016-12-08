@@ -1,0 +1,17 @@
+{
+    "name": "cli-fullscreen-screenshot",
+    "productName": "CLI fullscreen screenshot tool",
+    "version": "0.0.1",
+    "description": "Crossplatform fullscreen CLI screenshot maker tool",
+    "homepage": "",
+    "main": "index.js",
+    "keywords": [
+        "Screenshot"
+    ],
+    "author": "enterdev",
+    "license": "MIT",
+    "devDependencies": {
+    },
+    "dependencies": {
+    }
+}

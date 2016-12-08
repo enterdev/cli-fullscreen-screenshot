@@ -1,0 +1,15 @@
+prefix=/tmp/ImageMagick-7.0.3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/ImageMagick-7
+includearchdir=/tmp/ImageMagick-7.0.3/include/ImageMagick-7
+libname=MagickCore-7.Q8HDRI
+moduledir=${exec_prefix}/lib/ImageMagick-7.0.3/modules-Q8HDRI
+ 
+Name: MagickCore
+Description: MagickCore - C API for ImageMagick (ABI Q8HDRI)
+URL: https://www.imagemagick.org
+Version: 7.0.3
+Cflags: -I${includearchdir} -I${includedir} -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=8
+Libs: -L${libdir} -l${libname}
+Libs.private: -L${libdir} -l${libname}    -ltiff -L/usr/local/opt/freetype/lib -lfreetype  -ljpeg   -L/usr/local/Cellar/libpng/1.6.26/lib -lpng16      -L/usr/local/Cellar/fontconfig/2.12.1_2/lib -L/usr/local/opt/freetype/lib -lfontconfig -lfreetype    -lXext -lXt   -lSM -lICE -lX11  -L/usr/local/Cellar/xz/5.2.2/lib -llzma -lbz2     -lxml2  -lz  -lm      -lm
